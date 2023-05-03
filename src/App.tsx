@@ -103,7 +103,7 @@ function Game({ children }: any) {
     setCurrentMove(nextMove);
   }
 
-  const moves = history.map((squares, move, children) => {
+  const moves = history.map((_squares, move, _children) => {
     let description;
     if (move > 0) {
       description = "Go to move #" + move;
